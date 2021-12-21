@@ -35,6 +35,17 @@ NoteSpewAudioProcessor::NoteSpewAudioProcessor()
             std::make_unique<AudioParameterBool>("A_key", "A", 0),
             std::make_unique<AudioParameterBool>("A#_key", "A#", 0),
             std::make_unique<AudioParameterBool>("B_key", "B", 0),
+
+            std::make_unique<AudioParameterInt>("phraseStrat", "STRAT", 0, 127, 36),
+            std::make_unique<AudioParameterInt>("phraseDensity", "DENSITY", 0, 127, 60),
+            std::make_unique<AudioParameterInt>("phraseCount", "COUNT", 0, 127, 60),
+
+            std::make_unique<AudioParameterInt>("melodicStrat", "STRAT", 0, 127, 36),
+            std::make_unique<AudioParameterInt>("melodicNoteMin", "MIN", 0, 127, 60),
+            std::make_unique<AudioParameterInt>("melodicNoteMax", "MAX", 0, 8, 3),
+
+            std::make_unique<AudioParameterInt>("melodicAnticipation", "MELOD", 0, 127, 36),
+            std::make_unique<AudioParameterInt>("rhythmicAnticipation", "RHYTHM", 0, 127, 60),
         })
 {
 }
@@ -170,52 +181,6 @@ void NoteSpewAudioProcessor::processBlock(juce::AudioBuffer<float>& buffer, juce
         auto* channelData = buffer.getWritePointer(channel);
 
         // ..do something to the data...
-    }
-
-    for (int i = 0; i < NOTES_PER_OCTAVE; i++) {
-        bool keyVal = pvts.getParameter(NOTE_NAMES[i] + "_key")->getValue();
-        if (noteOn[i] != keyVal) {
-            noteOn[i] = keyVal;
-            sg.setScale(getCurrScale());
-        }
-    }
-
-    bool newChord = false;
-    bool isPlaying = false;
-    AudioPlayHead* playHead = this->getPlayHead();
-    if (playHead) {
-        AudioPlayHead::CurrentPositionInfo currentPositionInfo;
-        playHead->getCurrentPosition(currentPositionInfo);
-
-        float beat = fmod((currentPositionInfo.ppqPosition / currentPositionInfo.timeSigNumerator), 1.0);
-        int bar = (int)((currentPositionInfo.ppqPosition / currentPositionInfo.timeSigNumerator) / 1.0);
-
-        if (lastBar != bar) {
-            newChord = true;
-            lastBar = bar;
-        }
-
-        isPlaying = currentPositionInfo.isPlaying;
-    }
-
-    if (!isPlaying || newChord) {
-        for (MidiNote note : currChord) {
-            auto messageOff = juce::MidiMessage::noteOff(10, (int)note, (juce::uint8)(0));
-            midiMessages.addEvent(messageOff, 0);
-        }
-        currChord = Chord();
-    }
-
-    if (newChord) {
-        degree++;
-        if(degree > sg.getScale().size()) degree = 0;
-
-        currChord = sg.getChord(degree);
-        
-        for (MidiNote note : currChord) {
-            auto messageOn = juce::MidiMessage::noteOn(10, (int)note, (juce::uint8)(127));
-            midiMessages.addEvent(messageOn, 1);
-        }
     }
 }
 

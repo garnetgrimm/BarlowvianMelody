@@ -36,12 +36,12 @@ struct ScaleHandler {
 
 class SpewGenerator {
 	Scale scale;
-	DegreeList degrees;
 	MidiNote lowerBound = MidiNote(string("C4"));
 	MidiNote upperBound = MidiNote(string("A5"));
+	DegreeList degrees;
 	DegreeList spewedDegs;
-	int thirdsToStack = 3;
 public:
+	int thirdsToStack = 3;
 	void setScale(Scale scale);
 	Scale getScale(void);
 	void setBounds(pair<MidiNote, MidiNote> bounds);

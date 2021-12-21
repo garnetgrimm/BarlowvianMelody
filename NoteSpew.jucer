@@ -5,9 +5,13 @@
               pluginCharacteristicsValue="pluginIsSynth,pluginProducesMidiOut,pluginWantsMidiIn">
   <MAINGROUP id="WmuvFF" name="NoteSpew">
     <GROUP id="{A0CE520C-5220-AA67-94CC-424E7F7CF064}" name="Source">
+      <FILE id="GHkGws" name="outline.png" compile="0" resource="1" file="resource/outline.png"/>
       <FILE id="tEZgJz" name="YaHei.otf" compile="0" resource="1" file="resource/YaHei.otf"/>
+      <FILE id="TYlMBd" name="knob.png" compile="0" resource="1" file="resource/knob.png"/>
       <FILE id="T5Z2HZ" name="black.png" compile="0" resource="1" file="resource/black.png"/>
       <FILE id="dGbIjz" name="white.png" compile="0" resource="1" file="resource/white.png"/>
+      <FILE id="LD1I08" name="BitmapKnob.cpp" compile="1" resource="0" file="Source/BitmapKnob.cpp"/>
+      <FILE id="ovFjD6" name="BitmapKnob.h" compile="0" resource="0" file="Source/BitmapKnob.h"/>
       <FILE id="f4BaYP" name="SpewGenerator.h" compile="0" resource="0" file="Source/SpewGenerator.h"/>
       <FILE id="dCVrhz" name="SpewGenerator.cpp" compile="1" resource="0"
             file="Source/SpewGenerator.cpp"/>

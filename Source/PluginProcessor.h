@@ -62,10 +62,14 @@ private:
     vector<string> getCurrScale();
 
     SpewGenerator sg;
-    bool noteOn[NOTES_PER_OCTAVE];
     int lastBar;
     int degree = 0;
     Chord currChord;
+
+    bool noteOn[NOTES_PER_OCTAVE];
+    int lowest;
+    int highest;
+    int thirds;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (NoteSpewAudioProcessor)
 };

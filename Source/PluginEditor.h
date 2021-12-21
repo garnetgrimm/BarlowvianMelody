@@ -9,6 +9,7 @@
 #pragma once
 
 #include "BitmapSwitch.h"
+#include "BitmapKnob.h"
 #include <JuceHeader.h>
 #include "PluginProcessor.h"
 #include "PluginConstants.h"
@@ -37,9 +38,12 @@ private:
     std::vector<std::shared_ptr<AudioProcessorValueTreeState::SliderAttachment>> knobAttachments;
 
     void addAndAttachButton(String ID, BitmapSwitch& button, Image& img, int animSize, bool isMomentary);
+    void addAndAttachKnob(String ID, BitmapKnob& knob, Image& img, int minVal, int maxVal, Slider::SliderStyle style);
 
     Image whiteKey = ImageCache::getFromMemory(BinaryData::white_png, BinaryData::white_pngSize);
     Image blackKey = ImageCache::getFromMemory(BinaryData::black_png, BinaryData::black_pngSize);
+    Image knobImg = ImageCache::getFromMemory(BinaryData::knob_png, BinaryData::knob_pngSize);
+    Image backgroundImg = ImageCache::getFromMemory(BinaryData::outline_png, BinaryData::outline_pngSize);
 
     vector<bool> isSharpOrFlat = {
       false, //C
@@ -57,6 +61,20 @@ private:
     };
 
     BitmapSwitch keyButtons[NOTES_PER_OCTAVE];
+
+    BitmapKnob phraseStratKnob;
+    BitmapKnob phraseDensityKnob;
+    BitmapKnob phraseCountKnob;
+
+    BitmapKnob melodicStratKnob;
+    BitmapKnob melodicNoteMinKnob;
+    BitmapKnob melodicNoteMaxKnob;
+
+    //move outlining chord forward
+    BitmapKnob melodicAnticipationKnob;
+    //move rhythm forward
+    BitmapKnob rhythmicAnticipationKnob;
+
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (NoteSpewAudioProcessorEditor)
 };
