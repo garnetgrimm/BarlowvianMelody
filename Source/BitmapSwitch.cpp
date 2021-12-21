@@ -34,11 +34,7 @@ void BitmapSwitchLookAndFeel::drawRotarySlider(juce::Graphics& g, int x, int y, 
 	int xMin = 0;
 	int xMax = animSize;
 
-	g.drawImage(img, (sliderBounds.getWidth() / 2) - (img.getWidth() / 2), FONT_HEIGHT + INFO_PADDING, img.getWidth(), animSize, xMin, yMin, img.getWidth(), animSize, false);
-	g.setFont(FONT);
-	g.setFont(FONT_HEIGHT);
-	g.setColour(INFO_COLOR);
-	g.drawSingleLineText(title, sliderBounds.getWidth() / 2, FONT_HEIGHT, juce::Justification::horizontallyCentred);
+	g.drawImage(img, (sliderBounds.getWidth() / 2) - (img.getWidth() / 2), 0, img.getWidth(), animSize, xMin, yMin, img.getWidth(), animSize, false);
 
 	LookAndFeel_V4::drawRotarySlider(g, x, y, width, height, sliderPos, rotaryStartAngle, rotaryEndAngle, slider);
 }

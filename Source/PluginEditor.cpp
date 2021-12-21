@@ -58,7 +58,7 @@ void NoteSpewAudioProcessorEditor::resized()
     keyOffsetX = 20;
     for (int i = 0; i < NOTES_PER_OCTAVE; i++) {
         Image& img = isSharpOrFlat[i] ? blackKey : whiteKey;
-        keyButtons[i].setBounds(keyOffsetX, 20, img.getWidth(), img.getHeight() + 25);
+        keyButtons[i].setBounds(keyOffsetX, 20, img.getWidth(), img.getHeight() / 2);
         if (!isSharpOrFlat[i]) keyOffsetX += whiteKey.getWidth() - (blackKey.getWidth() / 2);
         else keyOffsetX += (blackKey.getWidth() / 2);
     }
