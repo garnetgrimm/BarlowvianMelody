@@ -4,29 +4,56 @@
               addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1"
               pluginCharacteristicsValue="pluginIsSynth,pluginProducesMidiOut,pluginWantsMidiIn">
   <MAINGROUP id="WmuvFF" name="NoteSpew">
-    <GROUP id="{A0CE520C-5220-AA67-94CC-424E7F7CF064}" name="Source">
-      <FILE id="GHkGws" name="outline.png" compile="0" resource="1" file="resource/outline.png"/>
-      <FILE id="tEZgJz" name="YaHei.otf" compile="0" resource="1" file="resource/YaHei.otf"/>
-      <FILE id="TYlMBd" name="knob.png" compile="0" resource="1" file="resource/knob.png"/>
-      <FILE id="T5Z2HZ" name="black.png" compile="0" resource="1" file="resource/black.png"/>
-      <FILE id="dGbIjz" name="white.png" compile="0" resource="1" file="resource/white.png"/>
-      <FILE id="LD1I08" name="BitmapKnob.cpp" compile="1" resource="0" file="Source/BitmapKnob.cpp"/>
-      <FILE id="ovFjD6" name="BitmapKnob.h" compile="0" resource="0" file="Source/BitmapKnob.h"/>
-      <FILE id="f4BaYP" name="SpewGenerator.h" compile="0" resource="0" file="Source/SpewGenerator.h"/>
-      <FILE id="dCVrhz" name="SpewGenerator.cpp" compile="1" resource="0"
-            file="Source/SpewGenerator.cpp"/>
-      <FILE id="AMW1xE" name="PluginConstants.h" compile="0" resource="0"
-            file="Source/PluginConstants.h"/>
-      <FILE id="tMlfqT" name="BitmapSwitch.cpp" compile="1" resource="0"
+    <GROUP id="{9A6AE48A-2228-0381-956F-252E8CD7B064}" name="Source">
+      <GROUP id="{4578CDFA-3801-DE12-36A9-0F9B83332E33}" name="BarlowvianCore">
+        <GROUP id="{4FC128B8-740C-6249-F156-0BEE67ADDE4E}" name="RhythmCore">
+          <FILE id="qxCPMb" name="BarlowAnalysis.cpp" compile="1" resource="0"
+                file="Source/BarlowvianCore/RhythmCore/BarlowAnalysis.cpp"/>
+          <FILE id="lQuioo" name="BarlowAnalysis.h" compile="0" resource="0"
+                file="Source/BarlowvianCore/RhythmCore/BarlowAnalysis.h"/>
+          <FILE id="nOBn0K" name="RhythmAction.cpp" compile="1" resource="0"
+                file="Source/BarlowvianCore/RhythmCore/RhythmAction.cpp"/>
+          <FILE id="zC8Ug0" name="RhythmAction.h" compile="0" resource="0" file="Source/BarlowvianCore/RhythmCore/RhythmAction.h"/>
+          <FILE id="VbLNjd" name="RhythmGenerator.cpp" compile="1" resource="0"
+                file="Source/BarlowvianCore/RhythmCore/RhythmGenerator.cpp"/>
+          <FILE id="RM17E2" name="RhythmGenerator.h" compile="0" resource="0"
+                file="Source/BarlowvianCore/RhythmCore/RhythmGenerator.h"/>
+        </GROUP>
+        <GROUP id="{5C1987FA-B28D-1735-5D4F-BAD757DFA3C6}" name="SongCore">
+          <FILE id="KsH562" name="ChordDescriptor.cpp" compile="1" resource="0"
+                file="Source/BarlowvianCore/SongCore/ChordDescriptor.cpp"/>
+          <FILE id="RURxBU" name="ChordDescriptor.h" compile="0" resource="0"
+                file="Source/BarlowvianCore/SongCore/ChordDescriptor.h"/>
+          <FILE id="Kemshu" name="MidiNote.cpp" compile="1" resource="0" file="Source/BarlowvianCore/SongCore/MidiNote.cpp"/>
+          <FILE id="SQD31X" name="MidiNote.h" compile="0" resource="0" file="Source/BarlowvianCore/SongCore/MidiNote.h"/>
+          <FILE id="BgiqdP" name="Scale.cpp" compile="1" resource="0" file="Source/BarlowvianCore/SongCore/Scale.cpp"/>
+          <FILE id="ejMTc3" name="Scale.h" compile="0" resource="0" file="Source/BarlowvianCore/SongCore/Scale.h"/>
+          <FILE id="v7UKaY" name="SongGenerator.cpp" compile="1" resource="0"
+                file="Source/BarlowvianCore/SongCore/SongGenerator.cpp"/>
+          <FILE id="KQ4upE" name="SongGenerator.h" compile="0" resource="0" file="Source/BarlowvianCore/SongCore/SongGenerator.h"/>
+        </GROUP>
+      </GROUP>
+      <FILE id="irax2t" name="BitmapKnob.cpp" compile="1" resource="0" file="Source/BitmapKnob.cpp"/>
+      <FILE id="jQ14zv" name="BitmapKnob.h" compile="0" resource="0" file="Source/BitmapKnob.h"/>
+      <FILE id="FKNPUK" name="BitmapSwitch.cpp" compile="1" resource="0"
             file="Source/BitmapSwitch.cpp"/>
-      <FILE id="fiPuD9" name="BitmapSwitch.h" compile="0" resource="0" file="Source/BitmapSwitch.h"/>
-      <FILE id="rOanK3" name="PluginProcessor.cpp" compile="1" resource="0"
-            file="Source/PluginProcessor.cpp"/>
-      <FILE id="k2T0L6" name="PluginProcessor.h" compile="0" resource="0"
-            file="Source/PluginProcessor.h"/>
-      <FILE id="QXBmmO" name="PluginEditor.cpp" compile="1" resource="0"
+      <FILE id="XjvT00" name="BitmapSwitch.h" compile="0" resource="0" file="Source/BitmapSwitch.h"/>
+      <FILE id="HMLHP2" name="PluginConstants.h" compile="0" resource="0"
+            file="Source/PluginConstants.h"/>
+      <FILE id="yl7OMQ" name="PluginEditor.cpp" compile="1" resource="0"
             file="Source/PluginEditor.cpp"/>
-      <FILE id="knNAko" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+      <FILE id="wapDxD" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+      <FILE id="F3OfIX" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="EIkAGF" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+    </GROUP>
+    <GROUP id="{EC778B27-1F95-4F65-D4E2-C6FCA24906D5}" name="resource">
+      <FILE id="SKRUfO" name="black.png" compile="0" resource="1" file="resource/black.png"/>
+      <FILE id="Wa0xFL" name="knob.png" compile="0" resource="1" file="resource/knob.png"/>
+      <FILE id="FEBxDC" name="outline.png" compile="0" resource="1" file="resource/outline.png"/>
+      <FILE id="pYx8he" name="white.png" compile="0" resource="1" file="resource/white.png"/>
+      <FILE id="w1iVdB" name="YaHei.otf" compile="0" resource="1" file="resource/YaHei.otf"/>
     </GROUP>
   </MAINGROUP>
   <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
