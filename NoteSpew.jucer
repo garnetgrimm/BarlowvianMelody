@@ -7,45 +7,49 @@
     <GROUP id="{9A6AE48A-2228-0381-956F-252E8CD7B064}" name="Source">
       <GROUP id="{4578CDFA-3801-DE12-36A9-0F9B83332E33}" name="BarlowvianCore">
         <GROUP id="{4FC128B8-740C-6249-F156-0BEE67ADDE4E}" name="RhythmCore">
-          <FILE id="qxCPMb" name="BarlowAnalysis.cpp" compile="1" resource="0"
+          <FILE id="cj1zkG" name="BarlowAnalysis.cpp" compile="1" resource="0"
                 file="Source/BarlowvianCore/RhythmCore/BarlowAnalysis.cpp"/>
-          <FILE id="lQuioo" name="BarlowAnalysis.h" compile="0" resource="0"
+          <FILE id="JtATNL" name="BarlowAnalysis.h" compile="0" resource="0"
                 file="Source/BarlowvianCore/RhythmCore/BarlowAnalysis.h"/>
-          <FILE id="nOBn0K" name="RhythmAction.cpp" compile="1" resource="0"
+          <FILE id="bXgbvV" name="PhraseDistributor.cpp" compile="1" resource="0"
+                file="Source/BarlowvianCore/RhythmCore/PhraseDistributor.cpp"/>
+          <FILE id="FWwMUu" name="PhraseDistributor.h" compile="0" resource="0"
+                file="Source/BarlowvianCore/RhythmCore/PhraseDistributor.h"/>
+          <FILE id="Fu1yva" name="RhythmAction.cpp" compile="1" resource="0"
                 file="Source/BarlowvianCore/RhythmCore/RhythmAction.cpp"/>
-          <FILE id="zC8Ug0" name="RhythmAction.h" compile="0" resource="0" file="Source/BarlowvianCore/RhythmCore/RhythmAction.h"/>
-          <FILE id="VbLNjd" name="RhythmGenerator.cpp" compile="1" resource="0"
+          <FILE id="ixnzt4" name="RhythmAction.h" compile="0" resource="0" file="Source/BarlowvianCore/RhythmCore/RhythmAction.h"/>
+          <FILE id="spl1LG" name="RhythmGenerator.cpp" compile="1" resource="0"
                 file="Source/BarlowvianCore/RhythmCore/RhythmGenerator.cpp"/>
-          <FILE id="RM17E2" name="RhythmGenerator.h" compile="0" resource="0"
+          <FILE id="qJJ2Z1" name="RhythmGenerator.h" compile="0" resource="0"
                 file="Source/BarlowvianCore/RhythmCore/RhythmGenerator.h"/>
         </GROUP>
         <GROUP id="{5C1987FA-B28D-1735-5D4F-BAD757DFA3C6}" name="SongCore">
-          <FILE id="KsH562" name="ChordDescriptor.cpp" compile="1" resource="0"
+          <FILE id="lojp99" name="ChordDescriptor.cpp" compile="1" resource="0"
                 file="Source/BarlowvianCore/SongCore/ChordDescriptor.cpp"/>
-          <FILE id="RURxBU" name="ChordDescriptor.h" compile="0" resource="0"
+          <FILE id="kEnb0v" name="ChordDescriptor.h" compile="0" resource="0"
                 file="Source/BarlowvianCore/SongCore/ChordDescriptor.h"/>
-          <FILE id="Kemshu" name="MidiNote.cpp" compile="1" resource="0" file="Source/BarlowvianCore/SongCore/MidiNote.cpp"/>
-          <FILE id="SQD31X" name="MidiNote.h" compile="0" resource="0" file="Source/BarlowvianCore/SongCore/MidiNote.h"/>
-          <FILE id="BgiqdP" name="Scale.cpp" compile="1" resource="0" file="Source/BarlowvianCore/SongCore/Scale.cpp"/>
-          <FILE id="ejMTc3" name="Scale.h" compile="0" resource="0" file="Source/BarlowvianCore/SongCore/Scale.h"/>
-          <FILE id="v7UKaY" name="SongGenerator.cpp" compile="1" resource="0"
+          <FILE id="iW5mhK" name="MidiNote.cpp" compile="1" resource="0" file="Source/BarlowvianCore/SongCore/MidiNote.cpp"/>
+          <FILE id="yUyJwA" name="MidiNote.h" compile="0" resource="0" file="Source/BarlowvianCore/SongCore/MidiNote.h"/>
+          <FILE id="UUM126" name="Scale.cpp" compile="1" resource="0" file="Source/BarlowvianCore/SongCore/Scale.cpp"/>
+          <FILE id="P8JQNq" name="Scale.h" compile="0" resource="0" file="Source/BarlowvianCore/SongCore/Scale.h"/>
+          <FILE id="QGaAPW" name="SongGenerator.cpp" compile="1" resource="0"
                 file="Source/BarlowvianCore/SongCore/SongGenerator.cpp"/>
-          <FILE id="KQ4upE" name="SongGenerator.h" compile="0" resource="0" file="Source/BarlowvianCore/SongCore/SongGenerator.h"/>
+          <FILE id="Egr0BQ" name="SongGenerator.h" compile="0" resource="0" file="Source/BarlowvianCore/SongCore/SongGenerator.h"/>
         </GROUP>
       </GROUP>
-      <FILE id="irax2t" name="BitmapKnob.cpp" compile="1" resource="0" file="Source/BitmapKnob.cpp"/>
-      <FILE id="jQ14zv" name="BitmapKnob.h" compile="0" resource="0" file="Source/BitmapKnob.h"/>
-      <FILE id="FKNPUK" name="BitmapSwitch.cpp" compile="1" resource="0"
+      <FILE id="X5CHXq" name="BitmapKnob.cpp" compile="1" resource="0" file="Source/BitmapKnob.cpp"/>
+      <FILE id="xlm6bY" name="BitmapKnob.h" compile="0" resource="0" file="Source/BitmapKnob.h"/>
+      <FILE id="LuHtVN" name="BitmapSwitch.cpp" compile="1" resource="0"
             file="Source/BitmapSwitch.cpp"/>
-      <FILE id="XjvT00" name="BitmapSwitch.h" compile="0" resource="0" file="Source/BitmapSwitch.h"/>
-      <FILE id="HMLHP2" name="PluginConstants.h" compile="0" resource="0"
+      <FILE id="zIXWSO" name="BitmapSwitch.h" compile="0" resource="0" file="Source/BitmapSwitch.h"/>
+      <FILE id="WzPyy4" name="PluginConstants.h" compile="0" resource="0"
             file="Source/PluginConstants.h"/>
-      <FILE id="yl7OMQ" name="PluginEditor.cpp" compile="1" resource="0"
+      <FILE id="WXUMGO" name="PluginEditor.cpp" compile="1" resource="0"
             file="Source/PluginEditor.cpp"/>
-      <FILE id="wapDxD" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
-      <FILE id="F3OfIX" name="PluginProcessor.cpp" compile="1" resource="0"
+      <FILE id="RKBfEz" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+      <FILE id="aT8Tsl" name="PluginProcessor.cpp" compile="1" resource="0"
             file="Source/PluginProcessor.cpp"/>
-      <FILE id="EIkAGF" name="PluginProcessor.h" compile="0" resource="0"
+      <FILE id="ywJPVw" name="PluginProcessor.h" compile="0" resource="0"
             file="Source/PluginProcessor.h"/>
     </GROUP>
     <GROUP id="{EC778B27-1F95-4F65-D4E2-C6FCA24906D5}" name="resource">
